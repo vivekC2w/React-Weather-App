@@ -1,0 +1,119 @@
+.title {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.daily-item {
+    /* background-color: #f5f5f5; */
+    background: linear-gradient(to right, #f5f5f5, #fff);
+    border-radius: 15px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 20px;
+}
+
+.daily-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }  
+
+.icon-small {
+    /* width: 40px; */
+    width: 50px;
+}
+
+.day {
+    color: #212121;
+    flex: 1 1;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 10px;
+    /* margin-left: 15px; */
+}
+
+.description {
+    flex: 1 1;
+    /* margin-right: 15px; */
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.min-max {
+    color: #757575;
+}
+
+.daily-deatils-grid {
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
+    row-gap: 0;
+    column-gap: grid;
+    display: grid;
+    flex: 1 1;
+    grid-template-columns: auto auto;
+    border-top: 1px solid #ccc;
+    padding: 10px 15px;
+    /* padding: 5px 15px; */
+}
+
+.daily-deatils-grid-item {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daily-deatils-grid-item label:first-child {
+    color: #757575;
+}
+.daily-deatils-grid-item label:last-child{
+    color: #212121;
+}
+
+@media (max-width: 768px) {
+    .daily-deatils-grid {
+      grid-template-columns: auto;
+    }
+    
+    .daily-item {
+        font-size: 12px;
+        height: 30px;
+        margin: 3px;
+        padding: 3px 10px;
+    }
+
+    .icon-small {
+        width: 30px;
+    }
+
+    .day {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .daily-deatils-grid {
+        padding: 5px 10px;
+    }
+
+    .daily-deatils-grid-item {
+        height: 20px;
+    }
+
+    .parameter-label {
+        font-size: 10px;
+    }
+
+    .parameter-value {
+        font-size: 10px;
+    }
+  }
+  

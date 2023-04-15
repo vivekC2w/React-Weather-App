@@ -1,0 +1,37 @@
+
+npx create-react-app react-weather-app
+
+npm i react-accessible-accordion
+
+npm i react-select-async-paginate --force
+
+npm run start
+
+3 components
+1. search on very top
+2. for current weather
+3. forcast
+
+We are calling 
+onChange = {handleOnChange};
+
+const handleOnChange = (searchData) => {			//passing the data 
+    setSearch(searchData);					//setting new value
+    onSearchChange(searchData);				//calling onSearchChange
+  }; 
+
+we are calling onSearchChange
+const Search = ({ onSearchChnage }) => {
+
+
+which is been passed from app.js file
+<Search onSearchChange={handleOnSearchChange} />   //calls the method handleOnSearchChange
+
+const handleOnSearchChange = (searchData) => {
+    console.log(searchData);					//value we are getting here
+  };
+
+What we wanted to get from search is just to get lattitude and logitude from the cities that we want
+
+Now we can create new component 
+Current Weather
